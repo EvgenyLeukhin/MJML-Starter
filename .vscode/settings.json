@@ -3,10 +3,15 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
   "prettier.singleQuote": true,
-  "[jsonc]": {
+
+  "[mjml]": {
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+
+  // html
+  // "html.format.enable": true,
+
+  // local theme
+  "workbench.colorTheme": "Default Dark Modern"
 }

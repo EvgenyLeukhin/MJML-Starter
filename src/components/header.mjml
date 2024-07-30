@@ -1,0 +1,5 @@
+<mj-section full-width="full-width" background-color="green">
+  <mj-column>
+    <mj-text color="white">HEADER</mj-text>
+  </mj-column>
+</mj-section>

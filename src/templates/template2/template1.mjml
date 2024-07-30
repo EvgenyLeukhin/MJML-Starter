@@ -1,0 +1,27 @@
+<extends src="layouts/default.mjml">
+  <block name="content">
+    <!-- header -->
+    <!-- <include src="components/header.mjml"></include> -->
+
+    <mj-section>
+      <mj-column>
+        <mj-image width="100px" src="https://mjml.io/assets/img/logo-small.png" /></mj-image>
+
+        <mj-divider border-color="red"></mj-divider>
+        <mj-text font-size="20px" color="red" font-family="helvetica"> {{ template21 }} </mj-text>
+        <mj-divider border-color="red"></mj-divider>
+
+        <mj-divider border-color="green"></mj-divider>
+        <mj-text font-size="20px" color="green" font-family="helvetica"> {{ template22 }} </mj-text>
+        <mj-divider border-color="green"></mj-divider>
+
+        <mj-divider border-color="blue"></mj-divider>
+        <mj-text font-size="20px" color="blue" font-family="helvetica"> {{ template23 }} </mj-text>
+        <mj-divider border-color="blue"></mj-divider>
+      </mj-column>
+    </mj-section>
+
+    <!-- footer -->
+    <!-- <include src="components/footer.mjml"></include> -->
+  </block>
+</extends>

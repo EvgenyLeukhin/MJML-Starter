@@ -1,0 +1,5 @@
+<mj-section full-width="full-width" background-color="maroon">
+  <mj-column>
+    <mj-text color="white" align="center" padding-top="5px" padding-bottom="5px" font-size="30px">FOOTER</mj-text>
+  </mj-column>
+</mj-section>

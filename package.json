@@ -4,8 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "rimraf dist && gulp serve --dev",
-    "build": "rimraf dist && gulp build --prod",
-    "move": "gulp move"
+    "build": "rimraf dist && gulp build --dev && yarn format",
+    "build:prod": "rimraf dist && gulp build --prod",
+    "move": "gulp move",
+    "format": "prettier --write dist/**/*.{html,mjml}",
+    "deploy": "npm run build && gh-pages -d dist/html"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",
@@ -27,6 +30,7 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.3.3"
   }
 }

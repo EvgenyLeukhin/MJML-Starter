@@ -1,5 +1,76 @@
+<!-- https://mjml.io/try-it-live/eMfwguPPH9 -->
 <mjml>
-  <mj-body>
+  <mj-head>
+    <mj-title>LAYOUT-TITLE</mj-title>
+
+    <mj-attributes>
+      <!-- ALL -->
+      <mj-all
+        padding="0px"
+        margin="0px"
+        font-family="-apple-system, BlinkMacSystem Font, BlinkMacSystemFont, Segoe UI,Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, sans-serif"
+      ></mj-all>
+
+      <!-- COLOR TEXT -->
+      <mj-text color="white"></mj-text>
+
+      <!-- MJML CLASSES (global classes) -->
+      <mj-class name="body" width="600px" background-color="#f4f5f8"></mj-class>
+      <mj-class name="footer" full-width="full-width" background-color="maroon" padding-top="5px" padding-bottom="5px"></mj-class>
+      <mj-class name="footer-text-left" color="red" align="center"></mj-class>
+      <mj-class name="footer-text-center" color="green" align="center"></mj-class>
+      <mj-class name="footer-text-right" color="blue" align="center"></mj-class>
+    </mj-attributes>
+
+    <!-- CSS (global classes) -->
+    <mj-style>
+      .body {
+        border: 1px solid red;
+        width: 750px;
+        margin: auto;
+      }
+
+      @media (max-width: 800px) {
+        .body {
+          width: 100%;
+          border: 1px solid green;
+        }
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body mj-class="body" css-class="body" width="500px">
+
+    <!-- HEADER -->
+    <mj-section full-width="full-width" background-color="green" padding-top="15px" padding-bottom="15px">
+      <mj-column>
+        <mj-text color="white" align="center"  font-size="25px">LOGO</mj-text>
+      </mj-column>
+
+      <mj-column padding-top="5px">
+        <mj-text>LINK-1, LINK-2, LINK-3</mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- HEADER -->
+
+    <!-- CONTENT -->
     <block name="content"></block>
+    <!-- CONTENT -->
+
+    <!-- FOOTER -->
+    <mj-section mj-class="footer">
+      <mj-column>
+        <mj-text mj-class="footer-text-left">FOOTER-LEFT</mj-text>
+      </mj-column>
+
+      <mj-column>
+        <mj-text mj-class="footer-text-center">FOOTER-CENTER</mj-text>
+      </mj-column>
+
+      <mj-column>
+        <mj-text mj-class="footer-text-right">FOOTER-RIGHT</mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- FOOTER -->
   </mj-body>
 </mjml>

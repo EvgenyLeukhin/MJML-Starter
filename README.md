@@ -1,3 +1,7 @@
+[Test stand](https://evgenyleukhin.github.io/MJML-Starter/template1.html)
+
+---
+
 # Email Starter
 
 :e-mail: A boilerplate for building responsive HTML emails.
