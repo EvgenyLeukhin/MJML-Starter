@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "serve": "rimraf dist && gulp serve --dev",
+    "dev": "rimraf dist && gulp serve --dev",
     "build": "rimraf dist && gulp build --prod",
     "move": "gulp move"
   },
@@ -25,5 +25,8 @@
     "posthtml-extend": "^0.6.3",
     "posthtml-include": "^1.7.4",
     "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
